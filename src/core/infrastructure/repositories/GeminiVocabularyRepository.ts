@@ -20,7 +20,7 @@ export class GeminiVocabularyRepository implements IVocabularyRepository {
    * Fetches vocabulary items from Gemini AI
    */
   async getVocabularyItems(count: number = 5): Promise<VocabularyItem[]> {
-    const prompt = `Elabore ${count} palavras distintas e seus respectivos significados e um exemplo de uso. Retorne um JSON estrito no formato [{"word": "", "description": "", "useCase": ""}]. Não adicione quebras de linhas ou crases de markdown. \`word\` em inglês, \`description\` em português e \`useCase\` em português`
+    const prompt = `Elabore ${count} palavras distintas, comuns e não comuns e seus respectivos significados e um exemplo de uso. Retorne um JSON estrito no formato [{"word": "", "description": "", "useCase": ""}]. Seja criativo na escolha das palavras. Não adicione quebras de linhas ou crases de markdown. \`word\` em inglês, \`description\` em português e \`useCase\` em português`
 
     const response = await this.ai.models.generateContent({
       model: 'gemini-3-flash-preview',
@@ -31,6 +31,7 @@ export class GeminiVocabularyRepository implements IVocabularyRepository {
     })
 
     const text = response.text
+    console.log(text)
     if (!text) {
       throw new Error('Empty response from Gemini AI')
     }

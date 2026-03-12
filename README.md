@@ -53,7 +53,7 @@ _Final score display with an option to start a new session._
 
 To maintain organization and context, all AI prompts and architectural documentation are kept in dedicated folders:
 
-- 📂 **[`./prompts`](./prompts)**: Contains the exact prompts and iterative instructions used with Vercel's v0 and Gemini to generate the UI components, business logic, and Spec Driven Development (SDD) files.
+- 📂 **[`./_prompts`](./_prompts)**: Contains the exact prompts and iterative instructions used with Vercel's v0 and Gemini to generate the UI components, business logic, and Spec Driven Development (SDD) files.
 
 ---
 

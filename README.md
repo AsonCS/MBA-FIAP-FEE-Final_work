@@ -2,9 +2,9 @@
 
 🎓 **MBA [FIAP](https://www.fiap.com.br/) Project** 📚 **Class:** FrontEnd Engineering  
 👨‍🏫 **Professor:** Jaison Dairon Ebertz Schimidt  
-👨‍🎓 **Author:** Anderson Costa - RM360522
-🔗 **GitHub Repository:** [FrontEnd Engineering - Final Work](https://github.com/AsonCS/MBA-FIAP-FEE-Final_work)
-🌐 **Site:** [Aprendendo Vocabulário em Inglês](https://v0-mba-fiap-fee-final-work.vercel.app/)
+👨‍🎓 **Author:** Anderson Costa - RM360522  
+🔗 **GitHub Repository:** [FrontEnd Engineering - Final Work](https://github.com/AsonCS/MBA-FIAP-FEE-Final_work)  
+🌐 **Site:** [Aprendendo Vocabulário em Inglês](https://v0-mba-fiap-fee-final-work.vercel.app/)  
 ⚙️ **API:** [Gerador de Palavras em Inglês com Gemini](https://v0-mba-fiap-fee-final-work.vercel.app/api/vocabulary)
 
 ---
@@ -35,15 +35,15 @@ The project is built with a strong emphasis on **Clean Architecture** and **Doma
 
 ### Memorization Phase
 
-![Memorization Phase](./docs/assets/memorization-placeholder.png)  
+![Memorization Phase](https://github.com/AsonCS/MBA-FIAP-FEE-Final_work/tree/main/docs/assets/memorization-placeholder.png)
 
 ### Quiz Phase
 
-![Quiz Phase](./docs/assets/quiz-placeholder.png)  
+![Quiz Phase](https://github.com/AsonCS/MBA-FIAP-FEE-Final_work/tree/main/docs/assets/quiz-placeholder.png)
 
 ### Results Display
 
-![Results Phase](./docs/assets/results-placeholder.png)  
+![Results Phase](https://github.com/AsonCS/MBA-FIAP-FEE-Final_work/tree/main/docs/assets/results-placeholder.png)
 
 ---
 
@@ -51,7 +51,7 @@ The project is built with a strong emphasis on **Clean Architecture** and **Doma
 
 To maintain organization and context, all AI prompts and architectural documentation are kept in dedicated folders:
 
-- 📂 **[`./_prompts`](./docs/prompts)**: Contains the exact prompts and iterative instructions used with Vercel's v0 and Gemini to generate the UI components, business logic, and Spec Driven Development (SDD) files.
+- 📂 **[`./_prompts`](https://github.com/AsonCS/MBA-FIAP-FEE-Final_work/tree/main/docs/prompts)**: Contains the exact prompts and iterative instructions used with Vercel's v0 and Gemini to generate the UI components, business logic, and Spec Driven Development (SDD) files.
 
 ---
 
@@ -66,10 +66,10 @@ To maintain organization and context, all AI prompts and architectural documenta
 
 1. Clone the repository:
 
-    ```bash
-    git clone [https://github.com/AsonCS/MBA-FIAP-FEE-Final_work](https://github.com/AsonCS/MBA-FIAP-FEE-Final_work.git)
-    cd your-repo-name
-    ```
+```bash
+git clone [https://github.com/AsonCS/MBA-FIAP-FEE-Final_work.git](https://github.com/AsonCS/MBA-FIAP-FEE-Final_work.git)
+cd MBA-FIAP-FEE-Final_work
+```
 
 2. Install dependencies:
 
@@ -78,7 +78,8 @@ npm install
 ```
 
 3. Set up your environment variables:
-   Create a `.env.local` file in the root directory and add your Gemini API key:
+
+Create a `.env.local` file in the root directory and add your Gemini API key:
 
 ```env
 GEMINI_API_KEY=your_api_key_here
@@ -92,9 +93,10 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the application.
 
-### Deploy
+## 🔧 Deploy
 
-Manual deploy trigger on Vercel from `main` branch.
+1. Check `Test Coverage Pipeline` [test.yml](https://github.com/AsonCS/MBA-FIAP-FEE-Final_work/blob/main/.github/workflows/test.yml) [Action status](https://github.com/AsonCS/MBA-FIAP-FEE-Final_work/actions)
+2. Manual deploy trigger on Vercel from `main` branch.
 
 ---
 

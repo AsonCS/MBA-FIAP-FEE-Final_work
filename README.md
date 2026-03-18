@@ -5,7 +5,8 @@
 👨‍🎓 **Author:** Anderson Costa - RM360522  
 🔗 **GitHub Repository:** [FrontEnd Engineering - Final Work](https://github.com/AsonCS/MBA-FIAP-FEE-Final_work)  
 🌐 **Site:** [Aprendendo Vocabulário em Inglês](https://v0-mba-fiap-fee-final-work.vercel.app/)  
-⚙️ **API:** [Gerador de Palavras em Inglês com Gemini](https://v0-mba-fiap-fee-final-work.vercel.app/api/vocabulary)
+⚙️ **API:** [Gerador de Palavras em Inglês com Gemini](https://v0-mba-fiap-fee-final-work.vercel.app/api/vocabulary)  
+🔗 **Project Tests:** [Coverage Report](https://v0-mba-fiap-fee-final-work.vercel.app/coverage-report/index.html)
 
 ---
 
@@ -95,8 +96,20 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## 🔧 Deploy
 
-1. Check `Test Coverage Pipeline` [test.yml](https://github.com/AsonCS/MBA-FIAP-FEE-Final_work/blob/main/.github/workflows/test.yml) [Action status](https://github.com/AsonCS/MBA-FIAP-FEE-Final_work/actions)
-2. Manual deploy trigger on Vercel from `main` branch.
+### Github Actions
+
+[Action status](https://github.com/AsonCS/MBA-FIAP-FEE-Final_work/actions)
+[Test Coverage Pipeline](https://github.com/AsonCS/MBA-FIAP-FEE-Final_work/blob/main/.github/workflows/test.yml)
+
+### Github Coverage Report Artifact
+
+[🔗 Coverage Report](https://v0-mba-fiap-fee-final-work.vercel.app/coverage-report/index.html)
+
+![Coverage Report Artifact](./docs/assets/coverage-report.png)
+
+### Deploy to Vercel
+
+Manual deploy on Vercel from `main` branch.
 
 ---
 

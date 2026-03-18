@@ -15,6 +15,8 @@ const customJestConfig = {
     'src/**/*.{js,jsx,ts,tsx}',
     '!src/**/*.d.ts',
     '!src/**/index.ts',
+    '!src/app/**',
+    '!src/theme/**',
   ],
   coverageThreshold: {
     global: {

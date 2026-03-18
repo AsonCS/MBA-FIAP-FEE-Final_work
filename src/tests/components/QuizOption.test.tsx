@@ -58,4 +58,22 @@ describe('QuizOption', () => {
 
     expect(screen.getByTestId('quiz-option-world')).toBeInTheDocument()
   })
+
+  it('should render when selected is true', () => {
+    render(<QuizOption word="hello" onClick={mockOnClick} selected={true} />)
+
+    expect(screen.getByTestId('quiz-option-hello')).toBeInTheDocument()
+  })
+
+  it('should render when isCorrect is true', () => {
+    render(<QuizOption word="hello" onClick={mockOnClick} isCorrect={true} />)
+
+    expect(screen.getByTestId('quiz-option-hello')).toBeInTheDocument()
+  })
+
+  it('should render when isCorrect is false', () => {
+    render(<QuizOption word="hello" onClick={mockOnClick} isCorrect={false} />)
+
+    expect(screen.getByTestId('quiz-option-hello')).toBeInTheDocument()
+  })
 })

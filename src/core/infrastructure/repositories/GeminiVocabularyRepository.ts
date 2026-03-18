@@ -31,7 +31,7 @@ export class GeminiVocabularyRepository implements IVocabularyRepository {
     })
 
     const text = response.text
-    console.log(text)
+    // console.log(text)
     if (!text) {
       throw new Error('Empty response from Gemini AI')
     }

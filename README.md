@@ -35,15 +35,15 @@ The project is built with a strong emphasis on **Clean Architecture** and **Doma
 
 ### Memorization Phase
 
-![Memorization Phase](https://github.com/AsonCS/MBA-FIAP-FEE-Final_work/tree/main/docs/assets/memorization-placeholder.png)
+![Memorization Phase](./docs/assets/memorization-placeholder.png)
 
 ### Quiz Phase
 
-![Quiz Phase](https://github.com/AsonCS/MBA-FIAP-FEE-Final_work/tree/main/docs/assets/quiz-placeholder.png)
+![Quiz Phase](./docs/assets/quiz-placeholder.png)
 
 ### Results Display
 
-![Results Phase](https://github.com/AsonCS/MBA-FIAP-FEE-Final_work/tree/main/docs/assets/results-placeholder.png)
+![Results Phase](./docs/assets/results-placeholder.png)
 
 ---
 
@@ -51,7 +51,7 @@ The project is built with a strong emphasis on **Clean Architecture** and **Doma
 
 To maintain organization and context, all AI prompts and architectural documentation are kept in dedicated folders:
 
-- 📂 **[`./_prompts`](https://github.com/AsonCS/MBA-FIAP-FEE-Final_work/tree/main/docs/prompts)**: Contains the exact prompts and iterative instructions used with Vercel's v0 and Gemini to generate the UI components, business logic, and Spec Driven Development (SDD) files.
+- 📂 **[`./prompts`](https://github.com/AsonCS/MBA-FIAP-FEE-Final_work/tree/main/docs/prompts)**: Contains the exact prompts and iterative instructions used with Vercel's v0 and Gemini to generate the UI components, business logic, and Spec Driven Development (SDD) files.
 
 ---
 

@@ -107,7 +107,7 @@ describe('QuizSession', () => {
         ...createQuizSession(mockVocabulary),
         score: 5,
       }
-      expect(getResultMessage(session)).toBe('Excellent! Perfect score!')
+      expect(getResultMessage(session)).toBe('Excelente! Pontuação perfeita!')
     })
 
     it('should return great job message for 80%', () => {
@@ -115,7 +115,7 @@ describe('QuizSession', () => {
         ...createQuizSession(mockVocabulary),
         score: 4,
       }
-      expect(getResultMessage(session)).toBe('Great job! Keep practicing!')
+      expect(getResultMessage(session)).toBe('Ótimo trabalho! Continue praticando!')
     })
 
     it('should return good effort message for 60%', () => {
@@ -123,7 +123,7 @@ describe('QuizSession', () => {
         ...createQuizSession(mockVocabulary),
         score: 3,
       }
-      expect(getResultMessage(session)).toBe('Good effort! Room for improvement.')
+      expect(getResultMessage(session)).toBe('Bom esforço! Há espaço para melhorias.')
     })
 
     it('should return keep studying message for 40%', () => {
@@ -131,7 +131,7 @@ describe('QuizSession', () => {
         ...createQuizSession(mockVocabulary),
         score: 2,
       }
-      expect(getResultMessage(session)).toBe('Keep studying! Practice makes perfect.')
+      expect(getResultMessage(session)).toBe('Continue estudando! A prática leva à perfeição.')
     })
 
     it('should return encouragement message for below 40%', () => {
@@ -139,7 +139,7 @@ describe('QuizSession', () => {
         ...createQuizSession(mockVocabulary),
         score: 1,
       }
-      expect(getResultMessage(session)).toBe("Don't give up! Try again to improve your score.")
+      expect(getResultMessage(session)).toBe("Não desista! Tente novamente para melhorar sua pontuação.")
     })
   })
 })

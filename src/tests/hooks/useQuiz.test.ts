@@ -136,6 +136,17 @@ describe('useQuiz', () => {
       })
     })
 
-    expect(result.current.resultMessage).toBe('Excellent! Perfect score!')
+    expect(result.current.resultMessage).toBe('Excelente! Pontuação perfeita!')
   })
 })
+
+  it('should return false when submitAnswer is called before startQuiz', () => {
+    const { result } = renderHook(() => useQuiz(mockVocabulary))
+
+    let isCorrect: boolean = true
+    act(() => {
+      isCorrect = result.current.submitAnswer('hello')
+    })
+
+    expect(isCorrect).toBe(false)
+  })

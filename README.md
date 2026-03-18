@@ -1,12 +1,22 @@
 # English Vocabulary Learning
 
+## Class
+
 🎓 **MBA [FIAP](https://www.fiap.com.br/) Project** 📚 **Class:** FrontEnd Engineering  
 👨‍🏫 **Professor:** Jaison Dairon Ebertz Schimidt  
-👨‍🎓 **Author:** Anderson Costa - RM360522  
-🔗 **GitHub Repository:** [FrontEnd Engineering - Final Work](https://github.com/AsonCS/MBA-FIAP-FEE-Final_work)  
+👨‍🎓 **Author:** Anderson Costa - RM360522
+
+## Links
+
 🌐 **Site:** [Aprendendo Vocabulário em Inglês](https://v0-mba-fiap-fee-final-work.vercel.app/)  
 ⚙️ **API:** [Gerador de Palavras em Inglês com Gemini](https://v0-mba-fiap-fee-final-work.vercel.app/api/vocabulary)  
-🔗 **Project Tests:** [Coverage Report](https://v0-mba-fiap-fee-final-work.vercel.app/coverage-report/index.html)
+💻 **Desktop WebVitals:** [Page Speed Insights](https://v0-mba-fiap-fee-final-work.vercel.app/page-speed-insights-desktop/index.html)  
+📱 **Mobile WebVitals:** [Page Speed Insights](https://v0-mba-fiap-fee-final-work.vercel.app/page-speed-insights-mobile/index.html)
+
+## Github
+
+🔗 **GitHub Repository:** [FrontEnd Engineering - Final Work](https://github.com/AsonCS/MBA-FIAP-FEE-Final_work)  
+🧪 **Project Tests:** [Coverage Report](https://v0-mba-fiap-fee-final-work.vercel.app/coverage-report/index.html)
 
 ---
 
@@ -29,6 +39,18 @@ This web application is designed to help Brazilian speakers learn and memorize n
 Users go through a **Memorization Phase** to study the words, followed by an interactive **Quiz Phase** to test their retention, ending with a final score evaluation.
 
 The project is built with a strong emphasis on **Clean Architecture** and **Domain-Driven Design (DDD)** to ensure a scalable, highly testable, and decoupled codebase.
+
+---
+
+## 📊 Web Vitals
+
+💻 [Page Speed Desktop Insights](https://v0-mba-fiap-fee-final-work.vercel.app/page-speed-insights-desktop/index.html)
+
+![Memorization Phase](./docs/assets/insights-desktop.png)
+
+📱 [Page Speed Mobile Insights](https://v0-mba-fiap-fee-final-work.vercel.app/page-speed-insights-mobile/index.html)
+
+![Memorization Phase](./docs/assets/insights-mobile.png)
 
 ---
 
@@ -103,7 +125,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ### Github Coverage Report Artifact
 
-[🔗 Coverage Report](https://v0-mba-fiap-fee-final-work.vercel.app/coverage-report/index.html)
+[🧪 Coverage Report](https://v0-mba-fiap-fee-final-work.vercel.app/coverage-report/index.html)
 
 ![Coverage Report Artifact](./docs/assets/coverage-report.png)
 

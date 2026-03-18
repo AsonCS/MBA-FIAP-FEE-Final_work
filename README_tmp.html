@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>README.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="english-vocabulary-learning">English Vocabulary Learning</h1>
+<p>🎓 <strong>MBA <a href="https://www.fiap.com.br/">FIAP</a> Project</strong> 📚 <strong>Class:</strong> FrontEnd Engineering<br>
+👨‍🏫 <strong>Professor:</strong> Jaison Dairon Ebertz Schimidt<br>
+👨‍🎓 <strong>Author:</strong> Anderson Costa - RM360522<br>
+🔗 <strong>GitHub Repository:</strong> <a href="https://github.com/AsonCS/MBA-FIAP-FEE-Final_work">FrontEnd Engineering - Final Work</a><br>
+🌐 <strong>Site:</strong> <a href="https://v0-mba-fiap-fee-final-work.vercel.app/">Aprendendo Vocabulário em Inglês</a><br>
+⚙️ <strong>API:</strong> <a href="https://v0-mba-fiap-fee-final-work.vercel.app/api/vocabulary">Gerador de Palavras em Inglês com Gemini</a><br>
+🔗 <strong>Project Tests:</strong> <a href="https://v0-mba-fiap-fee-final-work.vercel.app/coverage-report/index.html">Coverage Report</a></p>
+<hr>
+<h2 id="%F0%9F%9B%A0%EF%B8%8F-technologies-used">🛠️ Technologies Used</h2>
+<p><img src="https://img.shields.io/badge/Next-black?style=for-the-badge&amp;logo=next.js&amp;logoColor=white" alt="Next JS">
+<img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&amp;logo=react&amp;logoColor=%2361DAFB" alt="React">
+<img src="https://img.shields.io/badge/MUI-%230081CB.svg?style=for-the-badge&amp;logo=mui&amp;logoColor=white" alt="MUI">
+<img src="https://img.shields.io/badge/Google%20Gemini-%238E75B2.svg?style=for-the-badge&amp;logo=google&amp;logoColor=white" alt="Google Gemini">
+<img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&amp;logo=typescript&amp;logoColor=white" alt="TypeScript">
+<img src="https://img.shields.io/badge/-jest-%23C21325?style=for-the-badge&amp;logo=jest&amp;logoColor=white" alt="Jest">
+<img src="https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&amp;logo=githubactions&amp;logoColor=white" alt="GitHub Actions"></p>
+<hr>
+<h2 id="%F0%9F%93%96-about-the-project">📖 About the Project</h2>
+<p>This web application is designed to help Brazilian speakers learn and memorize new English vocabulary. Using the power of <strong>Google's Gemini AI</strong>, the application dynamically generates a unique set of 5 English words per session, complete with their Portuguese descriptions and contextually relevant usage examples.</p>
+<p>Users go through a <strong>Memorization Phase</strong> to study the words, followed by an interactive <strong>Quiz Phase</strong> to test their retention, ending with a final score evaluation.</p>
+<p>The project is built with a strong emphasis on <strong>Clean Architecture</strong> and <strong>Domain-Driven Design (DDD)</strong> to ensure a scalable, highly testable, and decoupled codebase.</p>
+<hr>
+<h2 id="%F0%9F%93%B8-screenshots">📸 Screenshots</h2>
+<h3 id="memorization-phase">Memorization Phase</h3>
+<p><img src="file:///home/acsgsa/dev/FIAP/MBA-FIAP-FEE-Final_work/docs/assets/memorization-placeholder.png" alt="Memorization Phase"></p>
+<h3 id="quiz-phase">Quiz Phase</h3>
+<p><img src="file:///home/acsgsa/dev/FIAP/MBA-FIAP-FEE-Final_work/docs/assets/quiz-placeholder.png" alt="Quiz Phase"></p>
+<h3 id="results-display">Results Display</h3>
+<p><img src="file:///home/acsgsa/dev/FIAP/MBA-FIAP-FEE-Final_work/docs/assets/results-placeholder.png" alt="Results Phase"></p>
+<hr>
+<h2 id="%F0%9F%93%81-project-documentation--prompts">📁 Project Documentation &amp; Prompts</h2>
+<p>To maintain organization and context, all AI prompts and architectural documentation are kept in dedicated folders:</p>
+<ul>
+<li>📂 <strong><a href="https://github.com/AsonCS/MBA-FIAP-FEE-Final_work/tree/main/docs/prompts"><code>./prompts</code></a></strong>: Contains the exact prompts and iterative instructions used with Vercel's v0 and Gemini to generate the UI components, business logic, and Spec Driven Development (SDD) files.</li>
+</ul>
+<hr>
+<h2 id="%F0%9F%9A%80-getting-started">🚀 Getting Started</h2>
+<h3 id="prerequisites">Prerequisites</h3>
+<ul>
+<li>Node.js (v18 or higher)</li>
+<li>A Google Gemini API Key</li>
+</ul>
+<h3 id="installation">Installation</h3>
+<ol>
+<li>Clone the repository:</li>
+</ol>
+<pre class="hljs"><code><div>git <span class="hljs-built_in">clone</span> [https://github.com/AsonCS/MBA-FIAP-FEE-Final_work.git](https://github.com/AsonCS/MBA-FIAP-FEE-Final_work.git)
+<span class="hljs-built_in">cd</span> MBA-FIAP-FEE-Final_work
+</div></code></pre>
+<ol start="2">
+<li>Install dependencies:</li>
+</ol>
+<pre class="hljs"><code><div>npm install
+</div></code></pre>
+<ol start="3">
+<li>Set up your environment variables:</li>
+</ol>
+<p>Create a <code>.env.local</code> file in the root directory and add your Gemini API key:</p>
+<pre class="hljs"><code><div>GEMINI_API_KEY=your_api_key_here
+</div></code></pre>
+<ol start="4">
+<li>Run the development server:</li>
+</ol>
+<pre class="hljs"><code><div>npm run dev
+</div></code></pre>
+<p>Open <a href="http://localhost:3000">http://localhost:3000</a> with your browser to see the application.</p>
+<h2 id="%F0%9F%94%A7-deploy">🔧 Deploy</h2>
+<h3 id="github-actions">Github Actions</h3>
+<p><a href="https://github.com/AsonCS/MBA-FIAP-FEE-Final_work/actions">Action status</a>
+<a href="https://github.com/AsonCS/MBA-FIAP-FEE-Final_work/blob/main/.github/workflows/test.yml">Test Coverage Pipeline</a></p>
+<h3 id="github-coverage-report-artifact">Github Coverage Report Artifact</h3>
+<p><a href="https://v0-mba-fiap-fee-final-work.vercel.app/coverage-report/index.html">🔗 Coverage Report</a></p>
+<p><img src="file:///home/acsgsa/dev/FIAP/MBA-FIAP-FEE-Final_work/docs/assets/coverage-report.png" alt="Coverage Report Artifact"></p>
+<h3 id="deploy-to-vercel">Deploy to Vercel</h3>
+<p>Manual deploy on Vercel from <code>main</code> branch.</p>
+<hr>
+<h2 id="%F0%9F%A7%AA-testing">🧪 Testing</h2>
+<p>This project targets &gt;90% test coverage across Unit and UI tests.</p>
+<p>To run the test suite:</p>
+<pre class="hljs"><code><div>npm run <span class="hljs-built_in">test</span>
+</div></code></pre>
+<p>To view the coverage report:</p>
+<pre class="hljs"><code><div>npm run <span class="hljs-built_in">test</span> -- --coverage
+</div></code></pre>
+
+</body>
+</html>

@@ -1,8 +1,11 @@
-# English Vocabulary Builder
+# English Vocabulary Learning
 
 🎓 **MBA [FIAP](https://www.fiap.com.br/) Project** 📚 **Class:** FrontEnd Engineering  
 👨‍🏫 **Professor:** Jaison Dairon Ebertz Schimidt  
 👨‍🎓 **Author:** Anderson Costa - RM360522
+🔗 **GitHub Repository:** [FrontEnd Engineering - Final Work](https://github.com/AsonCS/MBA-FIAP-FEE-Final_work)
+🌐 **Site:** [Aprendendo Vocabulário em Inglês](https://v0-mba-fiap-fee-final-work.vercel.app/)
+⚙️ **API:** [Gerador de Palavras em Inglês com Gemini](https://v0-mba-fiap-fee-final-work.vercel.app/api/vocabulary)
 
 ---
 
@@ -30,22 +33,17 @@ The project is built with a strong emphasis on **Clean Architecture** and **Doma
 
 ## 📸 Screenshots
 
-_(Replace the placeholder images below with actual screenshots of your application)_
-
 ### Memorization Phase
 
 ![Memorization Phase](./docs/assets/memorization-placeholder.png)  
-_Users review the 5 AI-generated words, their meanings, and examples._
 
 ### Quiz Phase
 
 ![Quiz Phase](./docs/assets/quiz-placeholder.png)  
-_Users match the Portuguese description to the correct English word._
 
 ### Results Display
 
 ![Results Phase](./docs/assets/results-placeholder.png)  
-_Final score display with an option to start a new session._
 
 ---
 
@@ -53,7 +51,7 @@ _Final score display with an option to start a new session._
 
 To maintain organization and context, all AI prompts and architectural documentation are kept in dedicated folders:
 
-- 📂 **[`./_prompts`](./_prompts)**: Contains the exact prompts and iterative instructions used with Vercel's v0 and Gemini to generate the UI components, business logic, and Spec Driven Development (SDD) files.
+- 📂 **[`./_prompts`](./docs/prompts)**: Contains the exact prompts and iterative instructions used with Vercel's v0 and Gemini to generate the UI components, business logic, and Spec Driven Development (SDD) files.
 
 ---
 
@@ -93,6 +91,10 @@ npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the application.
+
+### Deploy
+
+Manual deploy trigger on Vercel from `main` branch.
 
 ---
 

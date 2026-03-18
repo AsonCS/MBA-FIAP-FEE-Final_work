@@ -2,8 +2,8 @@ import type { Metadata, Viewport } from 'next'
 import ThemeRegistry from '@/theme/ThemeRegistry'
 
 export const metadata: Metadata = {
-  title: 'English Vocabulary Learning App',
-  description: 'Learn English vocabulary with AI-powered word generation and interactive quizzes',
+  title: 'Aprendendo Vocabulário em Inglês',
+  description: 'Aprenda vocabulário em inglês com geração de palavras alimentada por IA e quizzes interativos',
 }
 
 export const viewport: Viewport = {

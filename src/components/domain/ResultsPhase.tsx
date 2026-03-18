@@ -76,7 +76,7 @@ export function ResultsPhase({
           gutterBottom
           data-testid="score-text"
         >
-          You scored {session.score} out of {session.vocabularyItems.length}
+          Você acertou {session.score} de {session.vocabularyItems.length}
         </Typography>
 
         <Typography
@@ -119,7 +119,7 @@ export function ResultsPhase({
           sx={{ px: 6, py: 1.5, fontSize: '1.1rem' }}
           data-testid="try-again-button"
         >
-          {isLoading ? 'Loading new words...' : 'Try Again'}
+          {isLoading ? 'Carregando novas palavras...' : 'Tentar Novamente'}
         </Button>
       </Paper>
     </Container>

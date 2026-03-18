@@ -62,14 +62,14 @@ export function getResultMessage(session: QuizSession): string {
   const percentage = calculateScorePercentage(session)
   
   if (percentage === 100) {
-    return 'Excellent! Perfect score!'
+    return 'Excelente! Pontuação perfeita!'
   } else if (percentage >= 80) {
-    return 'Great job! Keep practicing!'
+    return 'Ótimo trabalho! Continue praticando!'
   } else if (percentage >= 60) {
-    return 'Good effort! Room for improvement.'
+    return 'Bom esforço! Há espaço para melhorias.'
   } else if (percentage >= 40) {
-    return 'Keep studying! Practice makes perfect.'
+    return 'Continue estudando! A prática leva à perfeição.'
   } else {
-    return 'Don\'t give up! Try again to improve your score.'
+    return 'Não desista! Tente novamente para melhorar sua pontuação.'
   }
 }

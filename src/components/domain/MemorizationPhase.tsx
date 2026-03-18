@@ -21,10 +21,10 @@ export function MemorizationPhase({
     <Container maxWidth="lg" sx={{ py: 4 }}>
       <Paper sx={{ p: 4, mb: 4, textAlign: 'center', bgcolor: 'primary.main', color: 'white' }}>
         <Typography variant="h3" component="h1" gutterBottom sx={{ fontWeight: 700 }}>
-          Learn English Vocabulary
+          Aprendendo Vocabulário em Inglês
         </Typography>
         <Typography variant="h6" sx={{ opacity: 0.9 }}>
-          Memorize these 5 words before starting the quiz
+          Memorise estas 5 palavras antes de começar o quiz
         </Typography>
       </Paper>
 
@@ -45,7 +45,7 @@ export function MemorizationPhase({
           sx={{ px: 6, py: 1.5, fontSize: '1.1rem' }}
           data-testid="start-quiz-button"
         >
-          Start Quiz
+          Começar Quiz
         </Button>
       </Box>
     </Container>

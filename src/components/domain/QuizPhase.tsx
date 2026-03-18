@@ -62,7 +62,7 @@ export function QuizPhase({
               Quiz Time
             </Typography>
             <Chip
-              label={`Question ${session.currentStep + 1} of ${session.vocabularyItems.length}`}
+              label={`Questão ${session.currentStep + 1} de ${session.vocabularyItems.length}`}
               color="primary"
               variant="outlined"
             />
@@ -85,7 +85,7 @@ export function QuizPhase({
           }}
         >
           <Typography variant="body2" color="text.secondary" gutterBottom>
-            Which English word matches this description?
+            Qual palavra inglesa corresponde a esta descrição?
           </Typography>
           <Typography
             variant="h5"
@@ -118,7 +118,7 @@ export function QuizPhase({
 
         <Box sx={{ mt: 4, textAlign: 'center' }}>
           <Typography variant="body2" color="text.secondary">
-            Current Score: {session.score} / {session.currentStep}
+            Score: {session.score} / {session.currentStep}
           </Typography>
         </Box>
       </Paper>
